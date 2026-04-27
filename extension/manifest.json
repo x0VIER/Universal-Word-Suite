@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Raw Capture Bridge",
   "version": "1.0.0",
-  "description": "Capture YouTube transcript data using your active browser session.",
+  "description": "Capture YouTube transcript data, download videos from members-only pages, and create transcripts for YouTube audio.",
   "permissions": [
     "nativeMessaging",
     "activeTab",

@@ -16,14 +16,14 @@ Once you have the `.vtt` file, use the provided tools to clean it up.
 1. Open PowerShell.
 2. Run the wrapper script:
    ```powershell
-   ./tools/run-capture.ps1 -InputFile "C:\path\to\captions.vtt" -Name "MyVideoTranscript"
-   ```
+   ./tools/Start-Here.ps1 -InputFile "C:\path\to\captions.vtt" -Name "MyVideoTranscript"
+```
 
 ### Using Python Directly
 1. Open a terminal.
 2. Run the script:
    ```bash
-   python ./tools/run-capture.py "C:\path\to\captions.vtt" --name "MyVideoTranscript"
+   python ./tools/Extract-Transcript.py "C:\path\to\captions.vtt" --name "MyVideoTranscript"
    ```
 
 ## 3. Reviewing Results

@@ -13,7 +13,7 @@ Ensure you have the following installed:
 2. Open a terminal in the project root.
 3. Install Python dependencies (optional but recommended):
    ```powershell
-   pip install -r requirements.txt
+   # The tool is ready to use! Just right-click tools/Start-Here.ps1
    ```
 
 ## 3. Browser Extension Setup
