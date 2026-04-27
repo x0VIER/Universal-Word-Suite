@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Outputs
+output/
+temp/
+*.txt
+*.vtt
+*.mp4
+*.wav
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+
+# Tools
+bin/
+*.exe

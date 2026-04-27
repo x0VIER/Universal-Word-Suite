@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      margin: 0;
+    }
+    .header {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #bb86fc;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #bb86fc;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn:hover {
+      background: #9a67ea;
+      transform: scale(1.02);
+    }
+    .btn:active {
+      transform: scale(0.98);
+    }
+    #status {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #03dac6;
+      text-align: center;
+      min-height: 20px;
+    }
+    .progress-container {
+      width: 100%;
+      background-color: #333;
+      border-radius: 10px;
+      margin-top: 10px;
+      overflow: hidden;
+      display: none;
+    }
+    .progress-bar {
+      width: 0%;
+      height: 6px;
+      background-color: #03dac6;
+      transition: width 0.5s;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 10px;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span>🎥</span> VTS One-Click
+  </div>
+  
+  <button id="translateBtn" class="btn">Translate Current Video</button>
+  
+  <div id="progressContainer" class="progress-container">
+    <div id="progressBar" class="progress-bar"></div>
+  </div>
+  
+  <div id="status">Ready</div>
+  
+  <div class="footer">Video Translation Suite v1.0.0</div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
