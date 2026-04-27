@@ -1,48 +1,71 @@
+<div align="center">
+
+![Raw Capture YT Banner](raw_capture_yt_banner.png)
+
 # Raw Capture YT
+**The ultimate high-fidelity local transcript extraction suite.**
 
-![Raw Capture YT Logo](raw_capture_yt_logo.png)
+[![Version](https://img.shields.io/badge/version-1.0.0-cyan.svg)](https://github.com/x0VIER/Raw-Capture-YT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)](https://www.microsoft.com/windows)
+[![Python](https://img.shields.io/badge/python-3.10+-success.svg)](https://www.python.org/)
 
-**Raw Capture YT** is a high-fidelity local tool built for professionals and researchers who need to **get YouTube videos** and **download YouTube videos from members-only pages** as clean, line-by-line transcripts. 
+[What it is](#what-it-is) • [Key Features](#key-features) • [Quick Start](#quick-start) • [Workflows](#workflows) • [Safety](#safety-and-privacy)
 
-It provides a seamless way to **translate YouTube** content and **get a transcript for YouTube videos with no transcript** by leveraging your active browser session.
-
-## Why Raw Capture YT?
-
-Most tools "summarize" or "AI-wash" your data. Raw Capture YT is different. It uses **YouTube video audio to get transcripts** directly from the source caption tracks, ensuring you get the raw truth without the fluff. Whether you need to **create transcripts for YouTube audio** for research or just want a cleaner reading experience, this is the tool for you.
-
-## Workflows
-
-We have prepared three distinct ways to get started, depending on who you are:
-
-- **[For Humans (The Standard Guide)](docs/usage.md)**: Detailed technical instructions for developers and power users.
-- **[For Non-Technical People (The "Easy" Guide)](docs/simple-start.md)**: Extremely simple, step-by-step instructions for beginners.
-- **[For AI Agents (System Instructions)](AGENTS.md)**: Specialized metadata for AI assistants (like ChatGPT, Gemini, or Claude) to understand and run the repo.
-
-## Key Features & SEO Keywords
-
-- **Get YouTube videos** and transcripts with 100% fidelity.
-- **Download videos** and caption tracks directly from your authenticated session.
-- **Download YouTube videos from members-only pages** using the Browser Bridge.
-- **Translate YouTube** line-by-line into any language.
-- **Get a transcript for YouTube videos with no transcript** by capturing hidden caption streams.
-- **YouTube transcript** extraction with precise timestamps.
-- **Video capture** for forensic-level documentation.
-- **Create transcripts for YouTube audio** optimized for Edge "Read Aloud".
-- **YouTube video audio to get transcripts** without relying on third-party APIs.
-
-## Requirements
-
-- **OS**: Windows 10 or 11.
-- **Browser**: Chrome or Edge (for the **Raw Capture Bridge** extension).
-- **Environment**: Python 3.10+ and PowerShell.
-
-## Quick Start (The Fast Way)
-
-1. **Install the Extension**: Load the `/extension` folder into your browser.
-2. **Capture**: Click the "Capture Transcript" button on any YouTube video.
-3. **Extract**: Right-click `tools/Start-Here.ps1` and choose **Run with PowerShell**.
+</div>
 
 ---
 
-### Safety and Privacy Note
-This tool is intended for personal use with videos you are allowed to access. It does not bypass paywalls, DRM, or platform security. All data stays on **your** machine—no cloud, no tracking, no risk.
+> [!IMPORTANT]
+> **Raw Capture YT** is designed for forensic-level transcript accuracy. It pulls data directly from your active browser session, allowing you to **get YouTube videos** and **download YouTube videos from members-only pages** with zero loss in fidelity. No summaries, no AI-washing—just the raw text.
+
+## What it is
+
+**Raw Capture YT** is a local-first toolchain for researchers, developers, and power users who need to **translate YouTube** content or **get a transcript for YouTube videos with no transcript**. By leveraging a secure browser bridge, it captures the exact caption streams used by the YouTube player, ensuring that even private or member-only content is accessible for transcription.
+
+## Key Features
+
+| Feature | Description | Use Case |
+| :--- | :--- | :--- |
+| **Session Capture** | High-fidelity extraction via browser bridge. | **Download YouTube videos from members-only pages** |
+| **Line-by-Line Fidelity** | Zero summarization. Every word preserved. | **YouTube transcript** research and documentation |
+| **Universal Translation** | **Translate YouTube** into any language pair. | Forensic analysis of multi-lingual content |
+| **No-Transcript Capture** | **Get a transcript for YouTube videos with no transcript**. | Accessible captions for all video types |
+| **Optimized Output** | Cleaned for "Read Aloud" and accessibility. | **Create transcripts for YouTube audio** for reading flow |
+
+## Quick Start
+
+### 1. The Bridge
+- Open `chrome://extensions` in Chrome or Edge.
+- Enable **Developer mode**.
+- Click **Load unpacked** and select the `extension/` folder.
+
+### 2. The Capture
+- Open any YouTube video.
+- Click the **Raw Capture** icon and hit **Capture Transcript**.
+- A `.vtt` file will be saved to your downloads.
+
+### 3. The Extraction
+- Open the `tools/` folder.
+- Right-click `Start-Here.ps1` and select **Run with PowerShell**.
+- Find your finished transcript in the `output/` folder.
+
+## Workflows
+
+We provide specialized documentation for every type of user:
+
+- 👤 **[For Humans (Usage Guide)](docs/usage.md)**: Full technical manual for power users.
+- 👶 **[For Beginners (Simple Start)](docs/simple-start.md)**: No-code, step-by-step instructions.
+- 🤖 **[For AI Agents (AGENTS.md)](AGENTS.md)**: Metadata for automated tools and coding assistants.
+
+## Safety and Privacy
+
+- **Local Only**: No data ever leaves your machine. No cloud APIs, no tracking.
+- **Session Secure**: Uses your existing browser session—no need to provide passwords.
+- **Non-Destructive**: Does not bypass platform security or DRM. 
+
+---
+
+<div align="center">
+Built by <b>x0VIER</b> for the open-source community.
+</div>
