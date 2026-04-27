@@ -3,7 +3,9 @@
 Welcome! If you aren't a programmer and just want to get your YouTube transcripts, this guide is for you.
 
 ## What is this tool?
-Sometimes YouTube has great information, but you want to read it as a document or save it for later. **Raw Capture YT** lets you grab the text from any video you are currently watching—including videos that don't have a "Transcript" button or are private/members-only.
+This suite includes two powerful tools:
+1. **YouTube Transcript Extractor**: Grab the text from any video you are currently watching—including videos that don't have a "Transcript" button or are private/members-only.
+2. **Book Translator**: Turn physical or digital book scans (images) into clean, translated text using professional-grade OCR.
 
 ## How to use it (3 Easy Steps)
 

@@ -1,71 +1,103 @@
 <div align="center">
 
-![Raw Capture YT Banner](raw_capture_yt_banner.png)
+![Universal Word Suite Banner](universal_word_suite_banner.png)
 
-# Raw Capture YT
-**The ultimate high-fidelity local transcript extraction suite.**
+# Universal Word Suite
+**The ultimate high-fidelity capture and translation suite for Video & Print.**
 
-[![Version](https://img.shields.io/badge/version-1.0.0-cyan.svg)](https://github.com/x0VIER/Raw-Capture-YT)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)](https://www.microsoft.com/windows)
-[![Python](https://img.shields.io/badge/python-3.10+-success.svg)](https://www.python.org/)
+[![Version](https://img.shields.io/badge/version-1.1.0-red.svg)](https://github.com/x0VIER/Universal-Word-Suite)
+[![License: MIT](https://img.shields.io/badge/License-MIT-white.svg)](https://opensource.org/licenses/MIT)
+[![Platform](https://img.shields.io/badge/platform-Windows-black.svg)](https://www.microsoft.com/windows)
+[![Python](https://img.shields.io/badge/python-3.10+-red.svg)](https://www.python.org/)
 
-[What it is](#what-it-is) • [Key Features](#key-features) • [Quick Start](#quick-start) • [Workflows](#workflows) • [Safety](#safety-and-privacy)
+[YouTube Tool](#1-youtube-transcript-extractor) • [Book Tool](#2-book-translation-suite) • [Quick Start](#quick-start) • [Workflows](#workflows) • [Safety](#safety-and-privacy)
 
 </div>
 
 ---
 
-> [!IMPORTANT]
-> **Raw Capture YT** is designed for forensic-level transcript accuracy. It pulls data directly from your active browser session, allowing you to **get YouTube videos** and **download YouTube videos from members-only pages** with zero loss in fidelity. No summaries, no AI-washing—just the raw text.
+## Overview
 
-## What it is
+**Universal Word Suite** is a professional-grade toolkit designed for high-fidelity extraction and translation across two major domains: **YouTube Video** and **Physical/Digital Books**. 
 
-**Raw Capture YT** is a local-first toolchain for researchers, developers, and power users who need to **translate YouTube** content or **get a transcript for YouTube videos with no transcript**. By leveraging a secure browser bridge, it captures the exact caption streams used by the YouTube player, ensuring that even private or member-only content is accessible for transcription.
+Whether you need to **get YouTube videos** and **download YouTube videos from members-only pages** or process a multi-hundred-page book with forensic OCR accuracy, this suite provides the raw, unfiltered truth without the overhead of cloud APIs or AI summarization.
+
+---
+
+## 📽️ 1. YouTube Transcript Extractor
+
+Designed for researchers who need to **translate YouTube** content or **get a transcript for YouTube videos with no transcript**. 
+
+- **Session-Based Capture**: Extracts caption tracks directly from your authenticated browser session.
+- **Member-Only Access**: Seamlessly **download YouTube videos from members-only pages** by using your own cookies.
+- **Raw Word-for-Word**: No summaries. Every word captured using **YouTube video audio to get transcripts** or direct caption streams.
+
+## 📚 2. Book Translation Suite
+
+A high-performance OCR engine that turns page images into professional translations.
+
+- **High-Fidelity OCR**: Uses advanced local models to read text from physical or digital book scans.
+- **Automated Workflow**: Processes entire folders of page images into a single, unified document.
+- **Multi-Language Support**: Optimized for forensic translation across dozens of language pairs.
+
+---
 
 ## Key Features
 
-| Feature | Description | Use Case |
+| Domain | Feature | Benefit |
 | :--- | :--- | :--- |
-| **Session Capture** | High-fidelity extraction via browser bridge. | **Download YouTube videos from members-only pages** |
-| **Line-by-Line Fidelity** | Zero summarization. Every word preserved. | **YouTube transcript** research and documentation |
-| **Universal Translation** | **Translate YouTube** into any language pair. | Forensic analysis of multi-lingual content |
-| **No-Transcript Capture** | **Get a transcript for YouTube videos with no transcript**. | Accessible captions for all video types |
-| **Optimized Output** | Cleaned for "Read Aloud" and accessibility. | **Create transcripts for YouTube audio** for reading flow |
+| **YouTube** | **Get YouTube videos** as text | Instant access to searchable transcripts. |
+| **YouTube** | **Download videos** from private pages | Captures data behind authentication walls. |
+| **Books** | **Forensic OCR** Translation | Converts physical scans into editable, translated text. |
+| **General** | **Translate YouTube** & Print | Consistent high-quality translation across media. |
+
+---
 
 ## Quick Start
 
-### 1. The Bridge
-- Open `chrome://extensions` in Chrome or Edge.
-- Enable **Developer mode**.
+### 1. The Bridge (For YouTube)
+- Open `chrome://extensions` and enable **Developer mode**.
 - Click **Load unpacked** and select the `extension/` folder.
+- Capture your transcript directly from the YouTube player.
 
-### 2. The Capture
-- Open any YouTube video.
-- Click the **Raw Capture** icon and hit **Capture Transcript**.
-- A `.vtt` file will be saved to your downloads.
-
-### 3. The Extraction
+### 2. The Extraction
 - Open the `tools/` folder.
 - Right-click `Start-Here.ps1` and select **Run with PowerShell**.
-- Find your finished transcript in the `output/` folder.
+- Choose **(1)** for YouTube Transcripts or **(2)** for Book Translation.
+
+<details>
+<summary><b>🛠️ Advanced Setup & Manual Installation</b></summary>
+
+### Prerequisites
+- Windows 10/11
+- Python 3.10+
+- `pip install -r requirements.txt` (Required for Book OCR)
+
+### Manual Command Line Usage
+- **YouTube**: `python tools/Extract-Transcript.py <vtt_path> --name <output>`
+- **Books**: `python tools/Book-Translator.py <folder_path> --src es --dest en`
+
+</details>
+
+---
 
 ## Workflows
 
-We provide specialized documentation for every type of user:
+I have created specialized guides for everyone, no matter your technical level:
 
-- 👤 **[For Humans (Usage Guide)](docs/usage.md)**: Full technical manual for power users.
-- 👶 **[For Beginners (Simple Start)](docs/simple-start.md)**: No-code, step-by-step instructions.
-- 🤖 **[For AI Agents (AGENTS.md)](AGENTS.md)**: Metadata for automated tools and coding assistants.
+- 👤 **[For Humans (Technical Guide)](docs/usage.md)**
+- 👶 **[For Beginners (Simple Guide)](docs/simple-start.md)**
+- 🤖 **[For AI Agents (AGENTS.md)](AGENTS.md)**
+
+---
 
 ## Safety and Privacy
 
-- **Local Only**: No data ever leaves your machine. No cloud APIs, no tracking.
-- **Session Secure**: Uses your existing browser session—no need to provide passwords.
-- **Non-Destructive**: Does not bypass platform security or DRM. 
+> [!NOTE]
+> **Universal Word Suite** runs entirely on your local hardware. It does not send your session data, cookies, or book scans to any external servers. I designed this tool for personal use with content you have authorized access to. It does not bypass paywalls or DRM.
 
 ---
 
 <div align="center">
-Built by <b>x0VIER</b> for the open-source community.
+I made this tool for researchers and developers.
 </div>
