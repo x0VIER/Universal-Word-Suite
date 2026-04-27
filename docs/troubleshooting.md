@@ -6,9 +6,10 @@ Common issues and solutions for Raw Capture YT.
 - **Issue**: "Load unpacked" fails.
 - **Solution**: Ensure you selected the folder containing `manifest.json`. Check for syntax errors in the manifest.
 
-## 2. No Captions Found
-- **Issue**: The tool reports "No valid transcript entries found."
-- **Solution**: Ensure the video actually has captions. Some videos only have auto-generated captions; ensure they are enabled in the YouTube player before capturing.
+## 2. No Captions? No Problem.
+- **Issue**: The video you want to translate does not have a caption track.
+- **Solution**: I designed this tool to work even without captions! Simply use the **Audio Mode** to run a local AI transcription. This will listen to the video audio and create a perfect transcript from scratch. Ensure you have `faster-whisper` installed.
+- **Command**: `python tools/Extract-Transcript.py "video.mp4" --mode audio`
 
 ## 3. Python Errors
 - **Issue**: `ModuleNotFoundError: No module named '...'`

@@ -28,9 +28,9 @@ Whether you need to **get YouTube videos** and **download YouTube videos from me
 
 Designed for researchers who need to **translate YouTube** content or **get a transcript for YouTube videos with no transcript**. 
 
-- **Session-Based Capture**: Extracts caption tracks directly from your authenticated browser session.
-- **Member-Only Access**: Seamlessly **download YouTube videos from members-only pages** by using your own cookies.
-- **Raw Word-for-Word**: No summaries. Every word captured using **YouTube video audio to get transcripts** or direct caption streams.
+- **Captions Not Required**: If a video has no transcript, I built this to use **YouTube video audio to get transcripts** directly using local AI (Whisper).
+- **Session-Based Capture**: If captions *do* exist, it extracts them directly from your authenticated browser session for maximum speed.
+- **Member-Only Access**: Seamlessly **download YouTube videos from members-only pages** using your own secure credentials.
 
 ## 📚 2. Book Translation Suite
 

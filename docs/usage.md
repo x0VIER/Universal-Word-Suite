@@ -21,10 +21,12 @@ Once you have the `.vtt` file, use the provided tools to clean it up.
 
 ### Using Python Directly
 1. Open a terminal.
-2. Run the script:
+2. **For Captions**: `python ./tools/Extract-Transcript.py "C:\path\to\captions.vtt" --name "MyVideo"`
+3. **For No-Caption Videos (Audio Mode)**:
    ```bash
-   python ./tools/Extract-Transcript.py "C:\path\to\captions.vtt" --name "MyVideoTranscript"
+   python ./tools/Extract-Transcript.py "C:\path\to\video.mp4" --mode audio --name "DeepTranscript"
    ```
+   *Note: This will use local AI to listen to the audio and extract the text.*
 
 ## 3. Reviewing Results
 The final cleaned transcript will be saved in the `output/` folder as a `.txt` file. This file is formatted for easy reading and is compatible with browser "Read Aloud" features.
